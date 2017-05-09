@@ -397,7 +397,7 @@ verbatim code
 <h1 id="citations-and-biography">Citations and biography</h1>
 <p>The efficient organization and typesetting of citations and bibliographies is crucial for academic writing. Pandoc supports various strategies for managing references. For processing the citations and the creation of the bibliography, the command line parameter <code>--filter pandoc-citeproc</code> is used, with variables for the reference database and the bibliography style. The bibliography will be located automatically at the header <code># References</code> or <code># Bibliography</code>.</p>
 <h2 id="reference-databases">Reference databases</h2>
-<p>Pandoc is able to process all mainstream literature database formats, such as RIS, BIB, etc. However, for maintaining compatibility with LaTeX/ BIBTEX, the use of BIB databases is recommended. The used database either can be defined in the YAML metablock of the MD file (see below) or it can be passed as parameter when calling pandoc.</p>
+<p>Pandoc is able to process all mainstream literature database formats, such as RIS, BIB, etc. However, for maintaining compatibility with LaTeX/ BibTeX, the use of BIB databases is recommended. The used database either can be defined in the YAML metablock of the MD file (see below) or it can be passed as parameter when calling pandoc.</p>
 <h2 id="inserting-citations">Inserting citations</h2>
 <p>For inserting a reference, the database key is given within square brackets, and indicated by an ‘@’. It is also possible to add information, such as page:</p>
 <pre><code>[@suber_open_2012; @benkler_wealth_2006, 57 ff.]</code></pre>
@@ -489,7 +489,7 @@ bibtool -x md-article.aux -o bibshort.bib
 <p>The additional features we implemented facilitate the correct indexing of meta information of journal articles according to the ‘semantic web’ philosophy.</p>
 <p>Altogether, the MD format supports the agile writing and fast production of scientific literature. The associated time and cost reduction especially favours community-driven publication strategies.</p>
 <h1 id="acknowledgments">Acknowledgments</h1>
-<p>We cordially thank Dr. Gerd Neugebauer for his help in creating a subset of a bibtex data base using BibTool, as well as Dr. Ricardo A. Chávez Montes, Prof. Magnus Palmblad and Martin Fenner for comments on the manuscript. Warm thanks also go to Anubhav Kumar and Jennifer König for proofreading.</p>
+<p>We cordially thank Dr. Gerd Neugebauer for his help in creating a subset of a BibTeX data base using BibTool, as well as Dr. Ricardo A. Chávez Montes, Prof. Magnus Palmblad and Martin Fenner for comments on the manuscript. Warm thanks also go to Anubhav Kumar and Jennifer König for proofreading.</p>
 <h1 id="software-and-code-availability">Software and code availability</h1>
 <p>The relevant software for creating this manuscript used is cited according to <span class="citation">(Smith, Katz, and Niemeyer 2016)</span> and listed in <strong>Tab. 3</strong>. Since unique identifiers are missing for most software projects, we only refer to the project homepages or software repositories:</p>
 <p><strong>Table 3.</strong> Relevant software used for this article.</p>
@@ -555,7 +555,7 @@ bibtool -x md-article.aux -o bibshort.bib
 </tr>
 <tr class="even">
 <td align="left">BibTool</td>
-<td align="left">Bibtex database tool</td>
+<td align="left">BibTeX database tool</td>
 <td align="left">Gerd Neugebauer</td>
 <td align="left">2.63</td>
 <td align="left">16/01/16</td>
